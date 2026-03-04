@@ -25,6 +25,9 @@ curl https://mise.run | sh
 mise trust
 mise install
 pnpm i
+
+# Add the following to ~/.zshrc:
+source ~/path/to/repo/bin/env
 ```
 
 ## Recommended IDE Setup
