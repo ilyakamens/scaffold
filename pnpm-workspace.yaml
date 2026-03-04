@@ -1,0 +1,9 @@
+packages:
+  - client
+  - server
+
+approvedBuilds:
+  esbuild: true
+
+ignoredBuiltDependencies:
+  - esbuild
