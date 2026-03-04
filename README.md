@@ -1,6 +1,17 @@
 # Scaffold
 
-Monorepo with a Svelte 5 + TypeScript + Vite + Pico CSS + Ky + Oxc frontend (`client/`) and an optional language-agnostic backend (`server/`).
+Monorepo with a Svelte 5 + TypeScript + Vite + Pico CSS + Ky + Oxc frontend (`client/`) and an
+optional language-agnostic backend (`server/`).
+
+## To start a new project with Scaffold
+
+```zsh
+git clone --depth 1 https://github.com/ilyakamens/scaffold.git <repo>
+cd <repo>
+rm -rf .git
+git init && git add -A && git commit
+# Add your remote and push.
+```
 
 ## Environment Setup
 
