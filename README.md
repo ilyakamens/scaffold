@@ -8,10 +8,11 @@ optional language-agnostic backend (`server/`).
 ```zsh
 git clone --depth 1 https://github.com/ilyakamens/scaffold.git <repo>
 cd <repo>
-rm -rf .git
-git init && git add -A && git commit
-# Add your remote and push.
+mise trust && mise install
+pnpm i
 ```
+
+Then open Claude Code and tell it to do task 1 (`sd next`).
 
 ## Environment Setup
 
