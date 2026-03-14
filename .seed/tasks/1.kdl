@@ -1,0 +1,6 @@
+task id=1 status=todo {
+    title "Initialize project from scaffold"
+    description "Takes a project name and a git remote URL as input.\n\n1. Update README.md: replace scaffold-specific content (clone instructions, title) with the new project name\n2. Update CLAUDE.md: update project overview to reflect the new project\n3. Update `client/index.html` `<title>` with the new project name\n4. Update root `package.json` `\"name\"` with the new project name (lowercase/hyphenated)\n5. `rm -rf .git && git init`\n6. `git add -A && git commit -m \"Initial commit\"`\n7. `git remote add origin <url> && git push -u origin main`"
+    created "2026-03-14T17:11:47.551455+00:00"
+    modified "2026-03-14T17:11:55.595801+00:00"
+}
