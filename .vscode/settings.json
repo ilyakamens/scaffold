@@ -8,10 +8,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.oxc": "explicit"
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode",
-    "editor.formatOnSave": true
-  },
   "[typescript]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
