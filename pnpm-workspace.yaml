@@ -2,6 +2,8 @@ packages:
   - client
   - server
 
+minimumReleaseAge: 10080
+
 approvedBuilds:
   esbuild: true
 
