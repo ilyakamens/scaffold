@@ -1,6 +1,6 @@
 # Scaffold
 
-Monorepo with a Svelte 5 + TypeScript + Vite + Pico CSS + Ky + Oxc frontend (`client/`) and an
+Monorepo with a Svelte 5 + TypeScript + Vite + Tailwind CSS + Ky + Oxc frontend (`client/`) and an
 optional language-agnostic backend (`server/`).
 
 ## To start a new project with Scaffold

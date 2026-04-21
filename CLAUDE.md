@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Monorepo with a Svelte 5 + TypeScript + Vite frontend (`client/`) and an optional language-agnostic backend (`server/`).
 
 - **pnpm workspaces** for monorepo management
-- **Pico CSS** for classless styling
+- **Tailwind CSS v4** for utility-first styling (via `@tailwindcss/vite`)
 - **Ky** for HTTP requests
 - **OXC** (oxlint + oxfmt) for linting and formatting
 - **mise** for Node version management

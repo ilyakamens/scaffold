@@ -12,10 +12,11 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@picocss/pico": "^2.1.1",
+    "@tailwindcss/vite": "^4.2.2",
     "@tsconfig/node24": "^24.0.4",
     "ky": "^1.14.3",
-    "mixpanel-browser": "^2.75.0"
+    "mixpanel-browser": "^2.75.0",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2",
