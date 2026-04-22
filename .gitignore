@@ -30,3 +30,5 @@ playwright-report/
 
 .svelte-kit
 .mise.local.toml
+
+.claude/scheduled_tasks.lock
