@@ -11,6 +11,7 @@ Monorepo with a Svelte 5 + TypeScript + Vite frontend (`client/`) and an optiona
 - **Ky** for HTTP requests
 - **OXC** (oxlint + oxfmt) for linting and formatting
 - **mise** for Node version management
+- **portless** for stable `https://*.localhost` dev URLs (wraps `vite` / `vite preview` so ports don't collide across projects)
 
 ## Common Commands
 
@@ -19,9 +20,9 @@ All client commands run from the `client/` directory, or from root via `pnpm --f
 ### Development
 
 ```bash
-pnpm --filter client dev          # Start dev server (http://localhost:5173)
+pnpm --filter client dev          # Start dev server (https://scaffold.localhost)
 pnpm --filter client build        # Build for production
-pnpm --filter client preview      # Preview production build locally
+pnpm --filter client preview      # Preview production build (https://scaffold-preview.localhost)
 ```
 
 ### Code Quality
@@ -36,6 +37,7 @@ pnpm --filter client test:e2e     # Run end-to-end tests with Playwright
 
 ```bash
 mise install                      # Install node and pnpm (defined in mise.toml)
+pnpm add -g portless              # One-time global install for the .localhost proxy
 ```
 
 ## Architecture

@@ -1,6 +1,27 @@
 task id=1 status=todo {
     title "Initialize project from scaffold"
-    description "Takes a project name and a git remote URL as input.\n\n1. Update README.md: replace scaffold-specific content (clone instructions, title) with the new project name\n2. Update CLAUDE.md: update project overview to reflect the new project\n3. Update `client/index.html`: update `<title>`, `<meta name=\"description\">`, and Open Graph meta tags with the new project name and description\n4. Update root `package.json` `\"name\"` with the new project name (lowercase/hyphenated)\n5. `rm -rf .git && git init`\n6. `git add -A && git commit -m \"Initial commit\"`\n7. `git remote add origin <url> && git push -u origin main`"
     created "2026-03-14T17:11:47.551455+00:00"
-    modified "2026-03-14T17:47:09.844101+00:00"
+    modified "2026-04-23T10:20:58.329750+00:00"
+    description #"""
+Takes a project name and a git remote URL as input.
+
+1. Update README.md: replace scaffold-specific content (clone instructions,
+   title, and the `https://scaffold.localhost` URL) with the new project name
+2. Update CLAUDE.md: update project overview and swap
+   `https://scaffold.localhost` / `https://scaffold-preview.localhost` to use
+   the new project name
+3. Update `client/index.html`: update `<title>`, `<meta name="description">`,
+   and Open Graph meta tags with the new project name and description
+4. Update root `package.json` `"name"` with the new project name
+   (lowercase/hyphenated)
+5. Update `client/package.json`: in the portless-wrapped `dev` and `preview`
+   scripts, replace the `scaffold` / `scaffold-preview` route names with the
+   new project name (e.g. `portless <name> vite`, `portless <name>-preview
+   vite preview`)
+6. Update `client/playwright.config.ts`: replace
+   `https://scaffold-preview.localhost` with `https://<name>-preview.localhost`
+7. `rm -rf .git && git init`
+8. `git add -A && git commit -m "Initial commit"`
+9. `git remote add origin <url> && git push -u origin main`
+"""#
 }

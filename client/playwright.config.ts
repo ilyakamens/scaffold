@@ -3,8 +3,11 @@ import { defineConfig } from '@playwright/test';
 export default defineConfig({
   webServer: {
     command: 'pnpm build && pnpm preview',
-    port: 4173,
+    url: 'https://scaffold-preview.localhost',
     reuseExistingServer: !process.env.CI,
+  },
+  use: {
+    ignoreHTTPSErrors: true,
   },
   testDir: 'e2e',
 });
