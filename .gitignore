@@ -32,3 +32,4 @@ playwright-report/
 .mise.local.toml
 
 .claude/scheduled_tasks.lock
+.claude/worktrees/
