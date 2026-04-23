@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "portless scaffold vite",
+    "dev": "portless scaffold --force vite",
     "build": "vite build",
     "preview": "portless scaffold-preview vite preview",
     "lint": "oxlint --fix && oxfmt && svelte-check --tsconfig ./tsconfig.app.json",
