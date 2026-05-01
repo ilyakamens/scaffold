@@ -1,18 +1,15 @@
 import { defineConfig } from '@playwright/test';
 
+const baseURL = 'http://localhost:4173';
+
 export default defineConfig({
-  webServer: process.env.CI
-    ? {
-        command: 'pnpm build && vite preview --port 4173',
-        url: 'http://localhost:4173',
-      }
-    : {
-        command: 'pnpm build && pnpm preview',
-        url: 'https://scaffold-preview.localhost',
-        reuseExistingServer: true,
-      },
+  webServer: {
+    command: 'pnpm build && pnpm preview:test',
+    url: baseURL,
+    reuseExistingServer: !process.env.CI,
+  },
   use: {
-    ignoreHTTPSErrors: true,
+    baseURL,
   },
   testDir: 'e2e',
 });
