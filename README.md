@@ -13,7 +13,13 @@ pnpm i
 pnpm add -g portless
 ```
 
-Then open Claude Code and tell it to do task 1 (`sd next`).
+Then open your coding agent and ask it to initialize the project using task 1
+(`sd next` / `sd show 1`). Supply the destination Git remote URL; the project name
+defaults to the current directory name. Task 1 replaces all template-name
+references, configures the remote, verifies the app, and creates and pushes a
+fresh initial commit on `main`. Run it in the clone, not in this template.
+
+Shared agent instructions live in `AGENTS.md`; `CLAUDE.md` references that file.
 
 ## Environment Setup
 
@@ -64,3 +70,7 @@ pnpm test:e2e     # Run end-to-end tests
 pnpm build        # Build for production
 pnpm preview      # Preview production build (https://scaffold-preview.localhost)
 ```
+
+End-to-end tests start their own preview server on port 4173. If that port is
+occupied, run `PLAYWRIGHT_PORT=4174 pnpm --filter client test:e2e` from the root
+with an available port.
