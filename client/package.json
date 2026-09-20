@@ -13,23 +13,23 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
-    "@tsconfig/node24": "^24.0.4",
-    "ky": "^1.14.3",
-    "mixpanel-browser": "^2.75.0",
-    "tailwindcss": "^4.2.2"
+    "@tailwindcss/vite": "^4.3.3",
+    "@tsconfig/node24": "^24.0.5",
+    "ky": "^2.1.0",
+    "mixpanel-browser": "^2.83.0",
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
-    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "@playwright/test": "^1.63.0",
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@tsconfig/svelte": "^5.0.8",
-    "@types/node": "^25.3.3",
+    "@types/node": "^24.13.4",
     "oxfmt": "^0.36.0",
-    "oxlint": "^1.51.0",
-    "svelte": "^5.53.7",
-    "svelte-check": "^4.4.4",
-    "typescript": "~5.9.3",
-    "vite": "^7.3.1",
-    "vitest": "^4.0.18"
+    "oxlint": "^1.82.0",
+    "svelte": "^5.57.0",
+    "svelte-check": "^4.7.6",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.0"
   }
 }

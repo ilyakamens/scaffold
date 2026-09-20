@@ -4,8 +4,5 @@ packages:
 
 minimumReleaseAge: 10080
 
-approvedBuilds:
+allowBuilds:
   esbuild: true
-
-ignoredBuiltDependencies:
-  - esbuild

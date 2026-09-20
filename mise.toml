@@ -1,4 +1,4 @@
 [tools]
 node = "24"
-pnpm = "10.30.3"
+pnpm = "10.34.5"
 "github:zakj/seed" = "1.5.0"
