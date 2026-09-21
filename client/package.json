@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "portless scaffold --force vite",
+    "dev": "portless run --name scaffold --force vite",
     "build": "vite build",
     "preview": "portless scaffold-preview vite preview",
     "preview:test": "vite preview --port 4173",
