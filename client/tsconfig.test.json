@@ -1,8 +1,9 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
-  "include": ["src/**/*.test.ts", "src/**/__tests__/*", "e2e/**/*"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.svelte", "e2e/**/*"],
   "compilerOptions": {
     "composite": true,
+    "target": "ES2023",
     "paths": {
       "@/*": ["./src/*"]
     },

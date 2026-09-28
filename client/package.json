@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "portless scaffold-preview vite preview",
     "preview:test": "vite preview --port 4173",
-    "lint": "oxlint --fix && oxfmt && svelte-check --tsconfig ./tsconfig.app.json",
+    "lint": "oxlint --fix && oxfmt && svelte-check --tsconfig ./tsconfig.app.json && svelte-check --tsconfig ./tsconfig.test.json && tsc --noEmit -p ./tsconfig.node.json",
     "test": "vitest run",
     "test:e2e": "playwright test"
   },
