@@ -1,9 +1,10 @@
 task id=5 status=done {
     title "Upgrade compiler and development tools"
     created "2026-10-17T14:20:23.367679+00:00"
-    modified "2026-10-17T14:22:29.537340+00:00"
+    modified "2026-10-17T14:25:00.438589+00:00"
     description "Enable TypeScript 7 using the official TypeScript 6 compatibility package required by Svelte tooling. Upgrade pnpm, Seed, and the mise CI action to eligible major releases. Inspect all dependencies for newer majors; retain Node 24 as the current LTS with matching types. Preserve the seven-day release delay. Verify compiler diagnostics, lint, tests, build, browser tests, and audit before applying matching changes to Tilya."
     log {
         entry ts="2026-10-17T14:22:29.483698+00:00" "Enabled TypeScript 7.0.2 for Svelte and Node config checks using the official TypeScript 6 API compatibility package and incremental mode. Verified an intentional type error is rejected. Upgraded pnpm to 12.11.2 through the mise npm backend, Seed to 2.1.0, and mise-action to 5.1.1. Reviewed all direct packages and CI actions; retained Node 24 and matching types because Node 26 is not yet LTS. Seven-day release delay unchanged. Frozen install, lint, tests, build, browser test, and audit pass. Mirrored changes to Tilya."
+        entry ts="2026-10-17T14:25:00.389995+00:00" "Linux CI exposed an npm-backend pnpm installation failure. Switched to the official standalone GitHub release in mise; verified frozen installs in both repositories. Scaffold CI run 39040543657 passed lint, unit tests, and browser tests on Linux. Tilya Actions could not be inspected with the current GitHub CLI account; all Tilya local checks passed."
     }
 }
