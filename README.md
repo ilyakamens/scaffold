@@ -77,3 +77,10 @@ to install its Chromium browser.
 End-to-end tests start their own preview server on port 4173. If that port is
 occupied, run `PLAYWRIGHT_PORT=4174 pnpm --filter client test:e2e` from the root
 with an available port.
+
+## Type checking
+
+TypeScript 7 runs through `tsc` and `svelte-check --tsgo`. The `typescript`
+dependency aliases the official TypeScript 6 compatibility package because
+Svelte tooling still requires its JavaScript API. `@typescript/native` supplies
+the TypeScript 7 compiler.

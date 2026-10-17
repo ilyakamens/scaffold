@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "portless scaffold-preview vite preview",
     "preview:test": "vite preview --port 4173",
-    "lint": "oxlint --fix && oxfmt && svelte-check --tsconfig ./tsconfig.app.json && svelte-check --tsconfig ./tsconfig.test.json && tsc --noEmit -p ./tsconfig.node.json",
+    "lint": "oxlint --fix && oxfmt && svelte-check --tsgo --incremental --tsconfig ./tsconfig.app.json && svelte-check --tsgo --incremental --tsconfig ./tsconfig.test.json && tsc --noEmit -p ./tsconfig.node.json",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "test:e2e:install": "playwright install --with-deps chromium"
@@ -25,11 +25,12 @@
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@tsconfig/svelte": "^5.0.8",
     "@types/node": "^24.19.2",
+    "@typescript/native": "npm:typescript@~7.0.2",
     "oxfmt": "^0.72.0",
     "oxlint": "^1.87.0",
     "svelte": "^5.57.2",
     "svelte-check": "^4.7.6",
-    "typescript": "~6.0.3",
+    "typescript": "npm:@typescript/typescript6@~6.0.2",
     "vite": "^8.3.4",
     "vitest": "^5.0.3"
   }
