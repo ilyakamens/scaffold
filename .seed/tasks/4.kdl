@@ -1,0 +1,9 @@
+task id=4 status=done {
+    title "Update dependencies and resolve audit findings"
+    created "2026-10-17T14:17:09.016271+00:00"
+    modified "2026-10-17T14:18:17.761850+00:00"
+    description "Update dependencies within the existing toolchain, including the formatter and pnpm maintenance release. Preserve Node 24, TypeScript 6, the seven-day release delay, and existing application behavior. Verify lint, tests, build, browser tests, and dependency audit. Apply the same dependency changes to Tilya."
+    log {
+        entry ts="2026-10-17T14:18:17.709878+00:00" "Updated eligible frontend dependencies and pnpm 10.34.6 while preserving Node 24, TypeScript 6, and the seven-day release delay. Updated devalue to 5.9.4 and tinypool to 2.2.0, resolving all audit findings. Added a Chromium installation script used by CI. Lint, type checks, unit test, production build, Playwright E2E, and security audit pass. Matching updates applied to Tilya."
+    }
+}

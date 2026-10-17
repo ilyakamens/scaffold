@@ -71,6 +71,9 @@ pnpm build        # Build for production
 pnpm preview      # Preview production build (https://scaffold-preview.localhost)
 ```
 
+After installing or updating Playwright, run `pnpm --filter client test:e2e:install`
+to install its Chromium browser.
+
 End-to-end tests start their own preview server on port 4173. If that port is
 occupied, run `PLAYWRIGHT_PORT=4174 pnpm --filter client test:e2e` from the root
 with an available port.
