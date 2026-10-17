@@ -1,4 +1,4 @@
 [tools]
 node = "24"
-"npm:pnpm" = "12.11.2"
+"github:pnpm/pnpm" = "12.11.2"
 "github:zakj/seed" = "2.1.0"
