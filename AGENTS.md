@@ -10,10 +10,12 @@ belong in the initialized clone.
 
 - Use `sd next` and `sd show <id>` to inspect tasks, `sd start <id>` when starting,
   and `sd done <id>` when complete.
-- When asked to initialize a cloned project, follow `.seed/tasks/1.kdl`. Derive the
-  project slug from the directory name and use the user's destination Git URL.
-- Initialization is a one-time operation in the clone. Do not reset the template
-  repository's history or rerun initialization in an established project.
+- Create new projects through GitHub's **Use this template** action, then clone
+  the generated repository. When asked to initialize it, follow `.seed/tasks/1.kdl`.
+  Derive the project slug from the directory name and use the existing `origin`.
+- Initialization is a one-time operation in the generated project's clone.
+  Preserve Git history and remotes. Do not initialize this template repository
+  or rerun initialization in an established project.
 - Preserve unrelated changes and keep the existing toolchain unless the task
   calls for changing it. Do not invent business details, domains, or assets.
 - When a task spans the template and a clone, make reusable changes in the

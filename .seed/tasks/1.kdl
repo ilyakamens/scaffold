@@ -1,14 +1,16 @@
 task id=1 status=todo {
     title "Initialize project from starter template"
     created "2026-03-14T17:11:47.551455+00:00"
-    modified "2026-09-06T19:43:13.881527+00:00"
+    modified "2026-10-20T09:51:39+00:00"
     description #"""
-Takes a project name and a git remote URL as input. Default the project slug
-to the current repository directory name; use the supplied remote URL.
+Run in a clone of a new repository created through GitHub's "Use this template"
+action. Default the project slug to the current repository directory name;
+use the existing origin as the destination.
 
-1. Inspect repository guidance, Git status, and the destination remote before
-   making changes. Preserve unrelated work. Confirm the destination is empty
-   before creating and pushing a fresh history; never force-push over existing work.
+1. Inspect repository guidance, Git status, history, and origin's fetch and push
+   URLs before making changes. Verify this is the generated project's clone,
+   not the source template or an already initialized project. Preserve unrelated
+   work, Git history, and remotes; never reset history or force-push.
 2. Identify the template's old name from the root package.json. Replace every
    occurrence of that name, case-insensitively, with the new project slug or
    display name throughout repository-owned files, including hidden files,
@@ -30,13 +32,9 @@ to the current repository directory name; use the supplied remote URL.
    resolve remaining occurrences. Install dependencies using the lockfile,
    then run lint, unit tests, production build, and end-to-end tests. If the
    default test port is occupied, use PLAYWRIGHT_PORT with an available port.
-9. Start an independent Git history on main. Move the existing .git directory
-   to a recoverable location outside the repository before running git init -b main.
-10. Configure origin to the supplied URL: use git remote set-url origin <url>
-    if origin exists, otherwise git remote add origin <url>. Verify both fetch
-    and push URLs with git remote -v before pushing.
-11. Record initialization as complete, stage the initialized project, and
-    commit with the message "Initial commit". Push with git push -u origin main.
-12. Verify the remote main commit matches local HEAD and the working tree is clean.
+9. Record initialization as complete, stage the initialization changes, and
+   commit on main with the message "Initialize project", preserving the existing
+   commits. Push with git push -u origin main.
+10. Verify the remote main commit matches local HEAD and the working tree is clean.
 """#
 }

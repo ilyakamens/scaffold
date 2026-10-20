@@ -5,8 +5,11 @@ optional language-agnostic backend (`server/`).
 
 ## To start a new project with Scaffold
 
+On GitHub, click **Use this template → Create a new repository**. Clone the
+new repository and install dependencies:
+
 ```zsh
-git clone --depth 1 https://github.com/ilyakamens/scaffold.git <repo>
+git clone <new-repository-url> <repo>
 cd <repo>
 mise trust && mise install
 pnpm i
@@ -14,10 +17,11 @@ pnpm add -g portless
 ```
 
 Then open your coding agent and ask it to initialize the project using task 1
-(`sd next` / `sd show 1`). Supply the destination Git remote URL; the project name
-defaults to the current directory name. Task 1 replaces all template-name
-references, configures the remote, verifies the app, and creates and pushes a
-fresh initial commit on `main`. Run it in the clone, not in this template.
+(`sd next` / `sd show 1`). The project name defaults to the current directory
+name, and the destination is the existing `origin`. Task 1 replaces all
+template-name references, verifies the app, and commits and pushes the setup
+on `main`, preserving the history GitHub created. Run it in the new project's
+clone, not in this template.
 
 Shared agent instructions live in `AGENTS.md`; `CLAUDE.md` references that file.
 
