@@ -1,6 +1,0 @@
-task id=6 status=done {
-    title "Support GitHub template initialization"
-    created "2026-10-20T09:50:23.587785+00:00"
-    modified "2026-10-20T09:51:45.861033+00:00"
-    description "Make GitHub's Use this template action the only setup workflow in README, agent guidance, and the reusable initialization task. Preserve the generated repository's history and origin."
-}

@@ -8,8 +8,12 @@ This repository provides a minimal app and reusable development tooling for new
 projects. Keep template improvements generic; project-specific names and content
 belong in the initialized clone.
 
-- Use `sd next` and `sd show <id>` to inspect tasks, `sd start <id>` when starting,
-  and `sd done <id>` when complete.
+- Keep only the pending initialization task (`.seed/tasks/1.kdl`) in this
+  template, with `.seed/config.kdl` set to `next-id 2`. Do not add maintenance
+  tasks or task archives to the template.
+- In generated projects, use `sd next` and `sd show <id>` to inspect tasks,
+  `sd start <id>` when starting, and `sd done <id>` when complete. Track new
+  project tasks normally.
 - Create new projects through GitHub's **Use this template** action, then clone
   the generated repository. When asked to initialize it, follow `.seed/tasks/1.kdl`.
   Derive the project slug from the directory name and use the existing `origin`.
